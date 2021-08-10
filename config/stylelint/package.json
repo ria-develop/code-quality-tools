@@ -1,0 +1,16 @@
+{
+  "name": "@ria-develop/stylelint-config",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "stylelint": "*",
+    "stylelint-config-standard": "*",
+    "stylelint-prettier": "*",
+    "stylelint-config-prettier": "*",
+    "prettier": "*"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}

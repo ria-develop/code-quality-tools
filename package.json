@@ -1,0 +1,31 @@
+{
+  "name": "@ria-develop/code-quality-tools",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "config/*"
+  ],
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "less": "*",
+    "@ria-develop/eslint-config": "*"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@ria-develop"
+    ]
+  },
+  "stylelint": {
+    "extends": [
+      "@ria-develop/stylelint-config"
+    ]
+  }
+}
