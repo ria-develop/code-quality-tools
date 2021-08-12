@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
     "moduleResolution": "Node",
-    "isolatedModules": true,
     "esModuleInterop": true,
     "jsx": "react-jsx"
   },
   "exclude": [
-    "*.test.ts",
-    "*.test.tsx"
+    "node_modules",
+    "**/*.test.ts",
+    "**/*.test.tsx"
   ]
 }

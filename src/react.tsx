@@ -17,5 +17,10 @@ export const ArrowFunctionComponent = (props: ArrowFunctionComponentProps): JSX.
   console.log(props);
   // eslint-disable-next-line no-debugger
   debugger;
-  return <div onClick={onClick} />;
+  return (
+    // eslint-disable-next-line jsx-a11y/click-events-have-key-events,jsx-a11y/no-static-element-interactions
+    <div onClick={onClick}>
+      <img src="http://images/test.jpg" alt="" />
+    </div>
+  );
 };

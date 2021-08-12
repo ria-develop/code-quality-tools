@@ -16,7 +16,9 @@
   },
   "devDependencies": {
     "less": "*",
-    "@ria-develop/eslint-config": "*"
+    "@ria-develop/eslint-config": "*",
+    "@ria-develop/stylelint-config": "*",
+    "@ria-develop/jest-preset": "*"
   },
   "eslintConfig": {
     "extends": [
@@ -27,5 +29,8 @@
     "extends": [
       "@ria-develop/stylelint-config"
     ]
+  },
+  "jest": {
+    "preset": "@ria-develop/jest-preset"
   }
 }

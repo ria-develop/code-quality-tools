@@ -1,1 +1,3 @@
-export const ArrowFunctionComponent = () => <div />;
+export function greeting() {
+  return 'Hello';
+}

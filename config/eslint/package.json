@@ -13,6 +13,8 @@
     "eslint-plugin-prettier": "*",
     "eslint-plugin-react": "*",
     "eslint-plugin-react-hooks": "*",
+    "eslint-plugin-jsx-a11y": "*",
+    "eslint-plugin-testing-library": "*",
     "eslint-plugin-jest": "*",
     "jest": "*",
     "prettier": "*",

@@ -1,12 +1,14 @@
 module.exports = {
+  plugins: ['react', 'react-hooks', 'testing-library', 'jest', 'import', 'prettier', 'jsx-a11y'],
   extends: [
     'eslint:recommended',
-    'plugin:prettier/recommended',
-    'plugin:react/recommended',
-    'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
     'plugin:import/recommended',
-    'plugin:jest/recommended'
+    'plugin:jest/recommended',
+    'plugin:jsx-a11y/recommended',
+    'plugin:prettier/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime'
   ],
   ecmaFeatures: {
     es6: true,
