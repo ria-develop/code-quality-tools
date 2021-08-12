@@ -1,13 +1,13 @@
 {
   "name": "@ria-develop/stylelint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "dependencies": {
+    "prettier": "*",
     "stylelint": "*",
-    "stylelint-config-standard": "*",
-    "stylelint-prettier": "*",
     "stylelint-config-prettier": "*",
-    "prettier": "*"
+    "stylelint-config-standard": "*",
+    "stylelint-prettier": "*"
   },
   "publishConfig": {
     "access": "public",
