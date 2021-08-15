@@ -1,8 +1,8 @@
+const tsJest = require('ts-jest/jest-preset');
 // jest.config.js
 // Sync object
 /** @type {import('@jest/types').Config.InitialOptions} */
 const config = {
-  preset: 'ts-jest',
   verbose: true,
   collectCoverageFrom: ['**/src/**/*.{js,jsx,ts,tsx}'],
   coverageThreshold: {
@@ -23,4 +23,4 @@ const config = {
     }
   }
 };
-module.exports = config;
+module.exports = { ...tsJest, ...config };

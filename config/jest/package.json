@@ -6,6 +6,13 @@
   "scripts": {
     "postinstall": "node post-install.js"
   },
+  "peerDependencies": {
+    "jest": "*",
+    "@types/jest": "*"
+  },
+  "dependencies": {
+    "ts-jest": "*"
+  },
   "author": "",
   "license": "ISC",
   "publishConfig": {
