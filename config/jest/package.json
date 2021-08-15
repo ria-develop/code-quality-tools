@@ -1,6 +1,6 @@
 {
   "name": "@ria-develop/jest-preset",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "jest-preset.js",
   "scripts": {
