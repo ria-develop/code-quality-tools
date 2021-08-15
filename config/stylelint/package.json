@@ -2,6 +2,9 @@
   "name": "@ria-develop/stylelint-config",
   "version": "1.0.1",
   "main": "index.js",
+  "scripts": {
+    "postinstall": "node post-install.js"
+  },
   "dependencies": {
     "prettier": "*",
     "stylelint": "*",

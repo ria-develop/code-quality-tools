@@ -21,6 +21,11 @@ module.exports = {
   },
   settings: {
     react: 'detect',
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
+      }
+    },
     'import/extensions': ['.js', '.jsx']
   },
   rules: {
@@ -38,9 +43,16 @@ module.exports = {
   },
   overrides: [
     {
-      files: '**/*.+(ts|tsx)',
+      files: ['**/*.{ts,tsx}'],
       parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
+      settings: {
+        'import/parsers': {
+          '@typescript-eslint/parser': ['.ts', '.tsx']
+        }
+      },
       extends: [
+        'plugin:import/typescript',
         'plugin:@typescript-eslint/eslint-recommended', // removes redundant warnings between TS & ESLint
         'plugin:@typescript-eslint/recommended' // rules specific to typescript, e.g., writing interfaces
       ]
