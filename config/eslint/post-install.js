@@ -8,7 +8,7 @@ while (!fs.existsSync(path.resolve(rootPath, 'package.json'))) {
 const pkgJsonPath = path.resolve(rootPath, 'package.json');
 
 const json = require(pkgJsonPath);
-const { eslintConfig = {} } = json;
+const { eslintConfig = { extends: [] } } = json;
 const configName = '@ria-develop';
 eslintConfig.extends = (eslintConfig.extends.filter((item) => item !== configName) || []).concat(configName);
 fs.writeFileSync(pkgJsonPath, JSON.stringify({ ...json, eslintConfig }, null, 2));

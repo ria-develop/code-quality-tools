@@ -8,7 +8,7 @@ while (!fs.existsSync(path.resolve(rootPath, 'package.json'))) {
 const pkgJsonPath = path.resolve(rootPath, 'package.json');
 
 const json = require(pkgJsonPath);
-const { stylelint = {} } = json || {};
+const { stylelint = { extends: [] } } = json || {};
 const configName = '@ria-develop/stylelint-config';
 stylelint.extends = (stylelint.extends.filter((item) => item !== configName) || []).concat(configName);
 fs.writeFileSync(pkgJsonPath, JSON.stringify({ ...json, stylelint }, null, 2));
