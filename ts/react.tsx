@@ -1,7 +1,11 @@
-import { useCallback, useState } from 'react';
+import React, {useCallback, useState} from 'react';
 
-export const ArrowFunctionComponent = (props) => {
-  const [state, setState] = useState();
+type ArrowFunctionComponentProps = {
+  name?: string;
+};
+
+export const ArrowFunctionComponent = (props: ArrowFunctionComponentProps): JSX.Element => {
+  const [state, setState] = useState<string>();
 
   const onClick = useCallback(() => {
     if (state === 'CLOSED') {

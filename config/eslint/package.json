@@ -12,6 +12,7 @@
     "@typescript-eslint/parser": "*",
     "eslint": "*",
     "eslint-config-prettier": "*",
+    "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "*",
     "eslint-plugin-jest": "*",
     "eslint-plugin-jsx-a11y": "*",

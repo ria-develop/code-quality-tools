@@ -23,7 +23,7 @@ module.exports = {
     react: 'detect',
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx']
+        extensions: ['.js', '.jsx']
       }
     },
     'import/extensions': ['.js', '.jsx']
@@ -49,6 +49,9 @@ module.exports = {
       settings: {
         'import/parsers': {
           '@typescript-eslint/parser': ['.ts', '.tsx']
+        },
+        'import/resolver': {
+          typescript: {}
         }
       },
       extends: [

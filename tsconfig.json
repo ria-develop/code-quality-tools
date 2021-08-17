@@ -1,8 +1,15 @@
 {
   "compilerOptions": {
+    "outDir": "./dist",
     "moduleResolution": "Node",
     "esModuleInterop": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@main": [
+        "ts/main.ts"
+      ]
+    }
   },
   "exclude": [
     "node_modules",
