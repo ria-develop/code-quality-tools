@@ -19,7 +19,7 @@ const config = {
   coveragePathIgnorePatterns: ['/node_modules/', '/build/', '/coverage/', '/dist/', '/bin/'],
   globals: {
     'ts-jest': {
-      tsConfig: '<rootDir>/tsconfig.test.json'
+      tsconfig: '<rootDir>/tsconfig.test.json'
     }
   }
 };
