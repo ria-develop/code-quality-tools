@@ -3,27 +3,33 @@
   "version": "1.0.0",
   "description": "",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky install"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "workspaces": [
     "config/*"
   ],
-  "dependencies": {
-    "react": "*",
-    "react-dom": "*"
-  },
   "devDependencies": {
     "@ria-develop/eslint-config": "*",
     "@ria-develop/jest-preset": "*",
     "@ria-develop/stylelint-config": "*",
-    "@types/jest": "^27.0.1",
+    "@types/jest": "^27.0.2",
     "@types/react": "*",
     "@types/react-dom": "*",
-    "jest": "^27.0.6",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
     "less": "*",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.5.0",
+    "react": "*",
+    "react-dom": "*",
     "typescript": "*"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
   },
   "eslintConfig": {
     "extends": [

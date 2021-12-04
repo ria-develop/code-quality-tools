@@ -11,7 +11,8 @@
     "jest": "*"
   },
   "dependencies": {
-    "ts-jest": "*"
+    "ts-jest": "*",
+    "enhanced-resolve": "*"
   },
   "author": "",
   "license": "ISC",

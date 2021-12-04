@@ -10,23 +10,26 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime'
   ],
-  ecmaFeatures: {
-    es6: true,
-    jsx: true
-  },
   env: {
     browser: true,
     node: true,
-    jest: true
+    jest: true,
+    es6: true,
+    'jest/globals': true
   },
   settings: {
-    react: 'detect',
+    react: {
+      version: 'detect'
+    },
     'import/resolver': {
       node: {
         extensions: ['.js', '.jsx']
       }
     },
-    'import/extensions': ['.js', '.jsx']
+    'import/extensions': ['.js', '.jsx'],
+    jest: {
+      version: require('jest/package.json').version
+    }
   },
   rules: {
     'no-console': 2,
@@ -51,7 +54,9 @@ module.exports = {
           '@typescript-eslint/parser': ['.ts', '.tsx']
         },
         'import/resolver': {
-          typescript: {}
+          typescript: {
+            project: ['packages/*/tsconfig.json', 'dev/*/tsconfig.json', 'tsconfig.json']
+          }
         }
       },
       extends: [

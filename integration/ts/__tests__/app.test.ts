@@ -1,4 +1,4 @@
-import {greeting} from '@main';
+import { greeting } from '@main';
 
 describe(`Given I have a test to do`, () => {
   it.todo('should calculate summary');

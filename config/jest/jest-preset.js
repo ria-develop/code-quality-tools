@@ -17,10 +17,6 @@ const config = {
   testEnvironment: 'jsdom',
   testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
   coveragePathIgnorePatterns: ['/node_modules/', '/build/', '/coverage/', '/dist/', '/bin/'],
-  globals: {
-    'ts-jest': {
-      tsconfig: '<rootDir>/tsconfig.test.json'
-    }
-  }
+  globals: {}
 };
 module.exports = { ...tsJest, ...config };
